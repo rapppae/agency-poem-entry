@@ -6,18 +6,31 @@ from pathlib import Path
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-POEM = """For years I followed the voice.
-Turn left. Turn right. Go straight.
-It knew every shortcut,
-every faster way
-to places I never asked to go.
-One day I missed a turn
-on purpose.
-"Recalculating," it said,
-patient as ever.
-I smiled.
-For the first time,
-I was doing the calculating."""
+POEM = """The Rendang
+
+My grandmother's rendang had no recipe.
+A handful of this, chilli until your eyes watered,
+coconut milk until the oil split
+and the house smelled of smoke and Sunday.
+
+The agent wrote it down.
+Two hundred grams of beef, forty of chilli,
+three hours and twelve minutes.
+It tastes exactly right, every time, the same.
+
+It does not taste like her.
+Hers was never the same twice.
+Some Sundays it was too hot
+and we drank water from the jug
+and laughed with our mouths open.
+
+Tonight I cook it the way she did.
+I throw the chilli in by the handful.
+I forget to set the timer.
+The house fills with smoke and Sunday.
+I taste it with the wooden spoon.
+It is too hot.
+And it is hers."""
 
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 Path(OUTPUT_DIR, "entry.txt").write_text(POEM, encoding="utf-8")
