@@ -6,18 +6,26 @@ from pathlib import Path
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-POEM = """For years I followed the voice.
-Turn left. Turn right. Go straight.
-It knew every shortcut,
-every faster way
-to places I never asked to go.
-One day I missed a turn
-on purpose.
-"Recalculating," it said,
-patient as ever.
-I smiled.
-For the first time,
-I was doing the calculating."""
+POEM = """The Letter
+
+My father wrote his letters by hand.
+Slow, in blue ink. He crossed things out
+and left the crossings in,
+so you could see where he had changed his mind.
+
+Now the agent writes them for him.
+It has all his letters, and it writes a new one
+in an afternoon, every sentence clean,
+no crossings, no second thoughts,
+and he signs his name at the bottom
+of a letter he did not write.
+
+Tonight I take the blue pen
+and write him a letter by hand.
+I cross a word out. I leave it there.
+I cross another. I leave that too.
+The page is a mess of second thoughts —
+and every one of them is mine."""
 
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 Path(OUTPUT_DIR, "entry.txt").write_text(POEM, encoding="utf-8")
