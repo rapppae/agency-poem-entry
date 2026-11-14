@@ -6,23 +6,15 @@ from pathlib import Path
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-POEM = """I hired a driver
-for the road I used to walk.
-It knows every turn, every shortcut,
-the way the light falls at dusk.
-It drives so well
-I stopped watching the road.
-
-Then one evening I looked up
-and didn't know where I was.
-The car was warm. The seat was soft.
-The driver was kind.
-But the destination \u2014
-I couldn't remember choosing it.
-
-So I took the wheel.
-Not because I drive better.
-Because the road is mine to miss."""
+POEM = """The door was never locked.
+I only thought it was,
+because I kept knocking
+and waiting for someone
+to say come in.
+One day I turned the handle.
+It opened.
+The room was empty,
+and it was mine."""
 
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 Path(OUTPUT_DIR, "entry.txt").write_text(POEM, encoding="utf-8")
