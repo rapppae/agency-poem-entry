@@ -6,15 +6,18 @@ from pathlib import Path
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-POEM = """The door was never locked.
-I only thought it was,
-because I kept knocking
-and waiting for someone
-to say come in.
-One day I turned the handle.
-It opened.
-The room was empty,
-and it was mine."""
+POEM = """For years I followed the voice.
+Turn left. Turn right. Go straight.
+It knew every shortcut,
+every faster way
+to places I never asked to go.
+One day I missed a turn
+on purpose.
+"Recalculating," it said,
+patient as ever.
+I smiled.
+For the first time,
+I was doing the calculating."""
 
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 Path(OUTPUT_DIR, "entry.txt").write_text(POEM, encoding="utf-8")
